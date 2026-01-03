@@ -1,0 +1,19 @@
+import { useNavigate } from "react-router-dom";
+import { useAuthContext } from "./useAuthContext";
+
+export const useLogout = () => {
+  const navigate = useNavigate();
+  const { dispatch } = useAuthContext();
+
+  const logout = () => {
+    // remove localstroage item
+    localStorage.removeItem("user");
+
+    // dispatch logout action
+    dispatch({ type: "LOGOUT" });
+
+    navigate("/login");
+  };
+
+  return { logout };
+};
