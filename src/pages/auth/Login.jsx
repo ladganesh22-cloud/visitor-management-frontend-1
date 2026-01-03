@@ -20,7 +20,7 @@ const Login = () => {
           <h1 className='signup-name'>Login</h1>
           <p><ion-icon name="person-add-outline"></ion-icon> Enter your email and password</p>
           <div className='login-wrapper-container'>
-            <div className='left-sign-wrapper'><img src='../public/login-left-bg-2.jpg' /></div>
+            <div className='left-sign-wrapper'><img src='../login-left-bg-2.jpg' /></div>
             <div className="singup-wrapper right">
               <div className='form-content-wrapper'>
                 <input
