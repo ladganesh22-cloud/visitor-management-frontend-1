@@ -59,7 +59,7 @@ const Navbar = () => {
                   <span className="user-email">{email}</span>
                 </div> */}
                 <div className="user-meta">
-                  <img src="./../public/man.png" alt="User" className="user-avatar" />
+                  <img src="../man.png" alt="User" className="user-avatar" />
 
                   <div className="user-info">
                     <span className="user-role">{role}</span>
