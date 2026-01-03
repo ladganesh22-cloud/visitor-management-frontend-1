@@ -9,6 +9,18 @@
  npm i html5-qrcode
  npm i qrcode
 
+Admin Role
+ladganesh22@gmail.com
+ganesH123$
+
+Security Role
+varun.kumar123@gmail.com
+varuN123$
+
+Host Role
+tarun.d123@gmail.com
+taruN123$
+
 
 <video controls src="GBLPASS.mp4" title="Title"></video>
 
