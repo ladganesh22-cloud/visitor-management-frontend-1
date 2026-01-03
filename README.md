@@ -21,6 +21,13 @@ Host Role
 tarun.d123@gmail.com
 taruN123$
 
+# Netlify Deployment Link
+https://visitor-management-fronend-1.netlify.app/login
+
+# Visitor Management Back end GitHub Link
+https://github.com/ladganesh22-cloud/visitor-management-backend-1
+
+
 
 <video controls src="GBLPASS.mp4" title="Title"></video>
 
