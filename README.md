@@ -22,7 +22,7 @@ tarun.d123@gmail.com
 taruN123$
 
 # Netlify Deployment Link
-https://visitor-management-fronend-1.netlify.app/login
+https://visitor-management-fronend-1.netlify.app
 
 # Visitor Management Back end GitHub Link
 https://github.com/ladganesh22-cloud/visitor-management-backend-1
