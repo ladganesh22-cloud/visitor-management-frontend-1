@@ -92,7 +92,7 @@ const HostDashboard = () => {
 
   const handleApprovedSubmit = async (appointmentData) => {
     try {
-      console.log(appointmentData, 'appointmentDataappointmentData');
+      console.log(appointmentData, 'appointmentDataappointmentDatassssss');
       approvedAppointment(appointmentData)
       // await sendAppointmentEmail({
       //   title: 'Your GBLPASS Visitor Access Has Been Approved',
