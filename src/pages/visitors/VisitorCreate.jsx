@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { useVisitorContext } from "../../hooks/useVisitorContext";
 import { useAuthContext } from '../../hooks/useAuthContext'
 import { jwtDecode } from "jwt-decode";
@@ -24,6 +25,8 @@ const CreateVisitor = () => {
     singleToDo
   } = useFetchUserList();
 
+  // gor naviagate the page]
+  const gblnavigate = useNavigate();
 
   useEffect(() => {
     if (user?.token) {
@@ -76,6 +79,9 @@ const CreateVisitor = () => {
     if (fileInputRef.current) {
       fileInputRef.current.value = "";
     }
+
+    // after form submit page redirect to host-dashboard page
+    gblnavigate("/host-dashboard");
   };
 
   setTimeout(() => setSuccessMsg(""), 3000);

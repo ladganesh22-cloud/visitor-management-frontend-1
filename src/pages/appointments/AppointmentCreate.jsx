@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import useFetchVisitorList from "../../hooks/useFetchVisitor";
 import useFetchUserList from '../../hooks/useFetchUser';
 import { useAuthContext } from '../../hooks/useAuthContext'
@@ -30,6 +31,9 @@ const CreateAppointment = () => {
   const [selectedVisitor, setSelectedVisitor] = useState(null);
   const [appointmentDate, setAppintmentDate] = useState("");
 
+  // gor naviagate the page]
+  const gblnavigate = useNavigate();
+
   useEffect(() => {
     if (user?.token) {
       const { userId } = jwtDecode(user.token);
@@ -58,6 +62,9 @@ const CreateAppointment = () => {
     setPurpose("");
     setAppintmentDate("");
     setCreatedBy("");
+
+    // after form submit page redirect to host-dashboard page
+    gblnavigate("/host-dashboard");
   };
   console.log('visitor:', visitorList);
   console.log('selectedVisitor:', selectedVisitor);
